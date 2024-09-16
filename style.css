@@ -198,6 +198,7 @@ figure{
     padding: 20px;
 }
 #abonnement h1, .abonn h1{
+    text-align: justify;
     padding-left: 20px;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -223,6 +224,7 @@ figure{
     padding: 20px;
 }
 #formation h1, .forma h1{
+    text-align: justify;
     padding-left: 20px;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -235,6 +237,62 @@ figure{
     padding-bottom: 20px;
     border-radius: 10px;
 }
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.optionIntro{
+    padding: 10px;
+    flex-basis: 50%;
+}
+.form{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #12b11f61;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+.form img{
+    width: 70px;
+    padding-left: 140px;
+    padding-top: 10px;
+}
+form{
+    width: 350px;
+    height: 420px;
+}
+form h2{
+    color: #bcc92c;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+form input{
+    height: 30px;
+    width: 300px;
+    margin: 5px 0 5px 15px;
+    padding: 5px;
+    outline: hidden;
+    border-bottom: 2px solid #12b11f;
+    background-color: transparent;
+    border-radius: 10px;
+}
+::placeholder{
+    color: #000;
+    font-size: 20px;
+}
+form .btn{
+    margin-top: 20px;
+    width: 310px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
 .option{
     display: flex;
     align-items: center;

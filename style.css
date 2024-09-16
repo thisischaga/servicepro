@@ -5,7 +5,6 @@
 body{
     background-color: #ffffffa0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
 }
 header{
     height: 70px;
@@ -15,7 +14,7 @@ header{
 }
 .content{
     display: flex;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -50,6 +49,14 @@ ul li.actif a{
     background-color: #fff;
     color: #000;
     padding: 15px;
+}
+.menuToggle{
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    cursor: pointer;
 }
 main{
     overflow: hidden;
@@ -91,21 +98,274 @@ main{
 }
 .serviceBox{
     background-color: #ffffffa0;
+    margin: 100px 0 20px 0;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
-    max-height: 720px;
+    max-height: 600px;
     width: 400px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 .serviceBox img{
     height: 400px;
     width: 400px;
-    border-radius: 10%;
+    border-radius: 15%;
 }
 .serviceBox h3{
     font-size: 25px;
     padding: 20px 0 20px 0;
     text-align: center;
+}
+.serviceBox p{
+    font-size: 18px;
+    padding: 20px 0 20px 0;
+}
+.categ{
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.slider{
+    width: 85%;
+    height: 400px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+figure{
+    width: 400%;
+    animation: 10s slide infinite;
+    left: 0;
+    position: relative;
+}
+.slide{
+    width: 25%;
+    float: right;
+    overflow: hidden;
+    display: flex;
+    top: 120px;
+    position: relative;
+}
+.slide h2{
+    padding: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slide h1{
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    font-size: 60px;
+}
+.slide img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@keyframes slide{
+    0%{left:o;}
+    10%{left:o;}
+    20%{left:-100%;}
+    30%{left:-100%;}
+    40%{left:-200%;}
+    50%{left:-200%;}
+    55%{left:-300%;}
+    65%{left:-300%;}
+    66%{left:-200%;}
+    74%{left:-200%;}
+    75%{left:-100%;}
+    85%{left:-100%;}
+    90%{left:o;}
+    100%{left:o;}
+}
+.serviceText{
+    display: block;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.serviceText h1{
+    color: #bcc92c;
+    padding-left: 20px;
+}
+.serviceText h2{
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.serviceMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#abonnement, .abonn{
+    background-color: #719bb6;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+#abonnement:hover{
+    padding: 20px;
+}
+#abonnement h1, .abonn h1{
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#abonnement h2, .abonn h2{
+    text-align: center;
+    padding-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+#formation, .forma{
+    background-color: #28a73d;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+#formation:hover{
+    padding: 20px;
+}
+#formation h1, .forma h1{
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#formation h2, .forma h2{
+    text-align: center;
+    padding-top: 20px;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.optionIntro{
+    display: block;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.form{
+    display: block;
+    background-color: #12b11f61;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+.form img{
+    width: 70px;
+    padding-left: 140px;
+    padding-top: 10px;
+}
+form{
+    width: 350px;
+    height: 420px;
+}
+form h2{
+    color: #bcc92c;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+form input{
+    height: 30px;
+    width: 300px;
+    margin: 5px 0 5px 15px;
+    padding: 5px;
+    outline: hidden;
+    border-bottom: 2px solid #12b11f;
+    background-color: transparent;
+    border-radius: 10px;
+}
+::placeholder{
+    color: #000;
+    font-size: 20px;
+}
+form .btn{
+    margin-top: 20px;
+    width: 310px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width:800px) {
+    header{
+        height: 140px;
+        
+    }
+    header .content{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo{
+        border-bottom: 3px solid #bcc92c;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    .menu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    
+}
+.aboutMain{
+    margin-top: 40px;
+}
+.aboutIntro{
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.aboutMain .aboutTitle{
+    text-align: justify;
+    color: #8f9b12;
+}
+.aboutText h2, p{
+    text-align: justify;
+    margin: 20px 0 5px 40px;
+}
+.aboutText a{
+    color: blue;
+}
+.messageMain{
+    display: block;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.messageMain img{
+    width: 70px;
+    top: 40px;
+}
+.messageMain h1, h2{
+    text-align: center;
+    padding-top: 40px;
 }
 .serviceBox p{
     font-size: 18px;

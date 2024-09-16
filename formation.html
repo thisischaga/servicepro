@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App premiums</title>
+    <meta name="description" content="servicepro">
+    <meta name="author" content="Espoir">
+    <meta name="keyword" content="vpn, vps, iptv, canalplus, compte tiikyok">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Service.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <h1>Service<span>Pro</span></h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Acceuil</a>
+                    </li>
+                    <li class="actif">
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="about.html">A propos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="serviceText">
+        <h1>Service Pro a tous les formations <br>à votre disposition<br></h1>
+        <h2>Veillez remplir les formulaires <br>pour demander une de nos formation</h2>
+    </div>
+    <div class="option">
+        <div class="optionIntro">
+            <div class="forma">
+                <h2>Nos formation</h2>
+                <h1>Comptes monétisés <br>VPN / VPS <br>Chaines Canal+ <br>IPTV <br>Apps Premiums</h1>
+            </div>
+        </div>
+        <div class="form">
+            <img src="Service-removebg-preview.png" alt="logo">
+            <form action="message.html">
+                <h2>Formation</h2>
+                <input type="text" name="firstname" placeholder="Votre nom" required><br>
+                <input type="text" name="surname" placeholder="Votre prénom" required><br>
+                <input type="tel" name="whatsApp" placeholder="Votre numéro whatsapp" required><br>
+                <input list="nomsAb" name="nomsAb" placeholder="Choisissez une formation" required><br>
+                <datalist id="nomsAb">
+                    <option value="Compte monétisé">Compte monétisé</option>
+                    <option value="VPN / VPS">VPN / VPS</option>
+                    <option value="Chaines Canal+">Chaines Canal+</option>
+                    <option value="IPTV">IPTV</option>
+                    <option value="Apps premiums">Apps premiums</option>
+                </datalist>
+                <input type="submit" value="ENVOYER" class="btn">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@ header{
 }
 .content{
     display: flex;
-    width: 95%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -312,6 +312,7 @@ form .btn{
 @media (max-width:800px) {
     header{
         height: 140px;
+        width: 100%
         
     }
     header .content{
@@ -322,14 +323,13 @@ form .btn{
     }
     .logo{
         border-bottom: 3px solid #bcc92c;
-        width: 100%;
         padding: 10px 0 10px 0;
         text-align: center;
     }
     .menu{
         padding-top: 10px;
         padding-bottom: 10px;
-        
+        width: 100%
     }
     
 }

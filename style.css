@@ -258,51 +258,17 @@ figure{
     padding-left: 20px;
     padding-top: 40px;
 }
-.form{
+.contact{
     display: block;
-    background-color: #12b11f61;
-    margin-bottom: 40px;
-    border-radius: 6px;
 }
-.form img{
-    width: 70px;
-    padding-left: 140px;
-    padding-top: 10px;
+.contact img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 20px;
 }
-form{
-    width: 350px;
-    height: 250px;
-}
-form h2{
-    color: #bcc92c;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px;
-}
-form input{
-    height: 30px;
-    width: 300px;
-    margin: 5px 0 5px 15px;
-    padding: 5px;
-    outline: hidden;
-    border-bottom: 2px solid #12b11f;
-    background-color: transparent;
-    border-radius: 10px;
-}
-::placeholder{
-    color: #000;
-    font-size: 20px;
-}
-form .btn{
-    height: 40px;
-    width: 250px;
-    margin: 20px 0 5px 15px;
-    padding: 5px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-}
-
 @media (max-width:800px) {
     header{
         height: 140px;
@@ -415,24 +381,6 @@ form .btn{
         padding-left: 20px;
         width: 94%;
         padding-top: 40px;
-    }
-    form{
-        width: 280px;
-    }
-    form input{
-        height: 30px;
-        width: 240px;
-        margin: 5px 0 5px 15px;
-        padding: 5px;
-        outline: hidden;
-        border-bottom: 2px solid #12b11f;
-        background-color: transparent;
-        border-radius: 10px;
-    }
-    .form img{
-        width: 70px;
-        padding-left: 100px;
-        padding-top: 10px;
     }
 
 }

@@ -14,7 +14,7 @@ header{
 }
 .content{
     display: flex;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -49,18 +49,6 @@ ul li.actif a{
     background-color: #fff;
     color: #000;
     padding: 15px;
-}
-.menuToggle{
-    display: none;
-    font-size: 30px;
-    position: absolute;
-    top: 15px;
-    right: 50px;
-    cursor: pointer;
-}
-main{
-    overflow: hidden;
-    width: 100%;
 }
 .welcome{
     background: linear-gradient(#12b11f,#2e457d,gray);
@@ -98,17 +86,18 @@ main{
 }
 .serviceBox{
     background-color: #ffffffa0;
-    margin: 100px 0 20px 0;
+    margin: 100px 0 70px 0;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
     max-height: 600px;
     width: 400px;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 .serviceBox img{
     height: 400px;
     width: 400px;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 .serviceBox h3{
     font-size: 25px;
@@ -118,6 +107,9 @@ main{
 .serviceBox p{
     font-size: 18px;
     padding: 20px 0 20px 0;
+    position: relative;
+    right: 30px;
+    text-align: justify;
 }
 .categ{
     align-items: center;
@@ -125,7 +117,7 @@ main{
     width: 100%;
 }
 .slider{
-    width: 85%;
+    width: 100%;
     height: 400px;
     overflow: hidden;
     padding-left: 20px;
@@ -138,7 +130,7 @@ figure{
 }
 .slide{
     width: 25%;
-    float: right;
+    float: left;
     overflow: hidden;
     display: flex;
     top: 120px;
@@ -261,8 +253,8 @@ figure{
     flex-wrap: wrap;
 }
 .optionIntro{
-    display: block;
-    width: 80%;
+    display: flex;
+    flex-basis: 50%;
     padding-left: 20px;
     padding-top: 40px;
 }
@@ -279,7 +271,7 @@ figure{
 }
 form{
     width: 350px;
-    height: 420px;
+    height: 250px;
 }
 form h2{
     color: #bcc92c;
@@ -302,48 +294,161 @@ form input{
     font-size: 20px;
 }
 form .btn{
-    margin-top: 20px;
-    width: 310px;
     height: 40px;
+    width: 250px;
+    margin: 20px 0 5px 15px;
+    padding: 5px;
     background-color: #000;
     color: #fff;
+    border-radius: 10px;
 }
 
 @media (max-width:800px) {
     header{
         height: 140px;
-        width: 100%
+        width: 100%;
+        background-color: black;
+        color: #fff;
         
     }
-    header .content{
-        flex-wrap: wrap;
+    .content{
         display: flex;
+        width: 94%;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .logo{
-        border-bottom: 3px solid #bcc92c;
-        padding: 10px 0 10px 0;
+        text-align: center;
+        color: #12b11f;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        border-bottom: 1px solid #8f9b12;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .logo span{
+        color: #bcc92c;
+    }
+    .menu ul{
+        display: flex;
+        padding-top: 30px;
+    }
+    .menu ul li{
+        list-style: none;
+        padding: 3px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 5px;
+        border: 1px solid #fff;
+        transition: 0.3s ease-in-out;
+    }
+    ul li.actif a{
+        background-color: #fff;
+        color: #000;
+        padding: 15px;
+    }
+    .serviceBox{
+        background-color: #ffffffa0;
+        margin: 100px 0 20px 0;
+        border-radius: 10px;
+        transition: 0.4s ease-in-out;
+        width: 300px;
+    }
+    .serviceBox img{
+        height: 300px;
+        width: 300px;
+        border-radius: 10%;
+    }
+    .serviceBox h3{
+        font-size: 25px;
+        padding: 20px 0 20px 0;
         text-align: center;
     }
-    .menu{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 100%
+    .serviceBox p{
+        font-size: 18px;
+        padding: 20px 0 20px 0;
     }
-    
+    .slider{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        padding-left: 25px;
+    }
+    figure{
+        width: 400%;
+        animation: 10s slide infinite;
+        left: 0;
+        position: relative;
+    }
+    .slide{
+        width: 25%;
+        float: left;
+        overflow: hidden;
+        display: flex;
+        top: 120px;
+        position: relative;
+    }
+    .slide h2{
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .slide h1{
+        text-align: left;
+        color: #fff;
+        padding: 15px;
+        font-size: 50px;
+    }
+    .slide img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .optionIntro{
+        display: flex;
+        flex-basis: 50%;
+        padding-left: 20px;
+        width: 94%;
+        padding-top: 40px;
+    }
+    form{
+        width: 280px;
+    }
+    form input{
+        height: 30px;
+        width: 240px;
+        margin: 5px 0 5px 15px;
+        padding: 5px;
+        outline: hidden;
+        border-bottom: 2px solid #12b11f;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .form img{
+        width: 70px;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+
 }
 .aboutMain{
     margin-top: 40px;
+
 }
-.aboutIntro{
+.aboutIntro img{
     display: block;
-    width: 100%;
-    padding-left: 20px;
-    padding-top: 40px;
+    width: 70px;
+    position: relative;
+    left: 45%;
+    
 }
 .aboutMain .aboutTitle{
-    text-align: justify;
+    text-align: center;
     color: #8f9b12;
 }
 .aboutText h2, p{
@@ -355,307 +460,15 @@ form .btn{
 }
 .messageMain{
     display: block;
-    width: 80%;
+    width: 95%;
     padding-left: 20px;
     padding-top: 50px;
 }
 .messageMain img{
+    position: relative;
     width: 70px;
     top: 40px;
-}
-.messageMain h1, h2{
-    text-align: center;
-    padding-top: 40px;
-}
-.serviceBox p{
-    font-size: 18px;
-    padding: 20px 0 20px 0;
-}
-.categ{
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-.slider{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-figure{
-    width: 400%;
-    animation: 10s slide infinite;
-    left: 0;
-    position: relative;
-}
-.slide{
-    width: 25%;
-    float: right;
-    overflow: hidden;
-    display: flex;
-    top: 120px;
-    position: relative;
-}
-.slide h2{
-    font-size: 50px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.slide h1{
-    color: #fff;
-    font-size: 60px;
-}
-.slide img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-@keyframes slide{
-    0%{left:o;}
-    10%{left:o;}
-    20%{left:-100%;}
-    30%{left:-100%;}
-    40%{left:-200%;}
-    50%{left:-200%;}
-    55%{left:-300%;}
-    65%{left:-300%;}
-    66%{left:-200%;}
-    74%{left:-200%;}
-    75%{left:-100%;}
-    85%{left:-100%;}
-    90%{left:o;}
-    100%{left:o;}
-}
-.serviceText{
-    display: block;
-    width: 100%;
-    padding-top: 100px;
-}
-.serviceText h1{
-    color: #bcc92c;
-}
-.serviceText h2{
-    padding-top: 20px;
-}
-.serviceMain{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 70px;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-#abonnement, .abonn{
-    background-color: #719bb6;
-    height: 400px;
-    width: 350px;
-    border-radius: 10px;
-    transition: 0.6s ease-in-out;
-    margin-bottom: 30px;
-    margin: 20px;
-}
-#abonnement:hover{
-    padding: 20px;
-}
-#abonnement h1, .abonn h1{
-    text-align: justify;
-    padding-left: 20px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-#abonnement h2, .abonn h2{
-    text-align: center;
-    padding-top: 20px;
-    background-color: #000;
-    color: #fff;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-#formation, .forma{
-    background-color: #28a73d;
-    height: 400px;
-    width: 350px;
-    border-radius: 10px;
-    transition: 0.6s ease-in-out;
-    margin-bottom: 30px;
-    margin: 20px;
-}
-#formation:hover{
-    padding: 20px;
-}
-#formation h1, .forma h1{
-    text-align: justify;
-    padding-left: 20px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-#formation h2, .forma h2{
-    text-align: center;
-    padding-top: 20px;
-    background-color: #000;
-    color: #fff;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-.option{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.optionIntro{
-    padding: 10px;
-    flex-basis: 50%;
-}
-.form{
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #12b11f61;
-    margin-bottom: 40px;
-    border-radius: 6px;
-}
-.form img{
-    width: 70px;
-    padding-left: 140px;
-    padding-top: 10px;
-}
-form{
-    width: 350px;
-    height: 420px;
-}
-form h2{
-    color: #bcc92c;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px;
-}
-form input{
-    height: 30px;
-    width: 300px;
-    margin: 5px 0 5px 15px;
-    padding: 5px;
-    outline: hidden;
-    border-bottom: 2px solid #12b11f;
-    background-color: transparent;
-    border-radius: 10px;
-}
-::placeholder{
-    color: #000;
-    font-size: 20px;
-}
-form .btn{
-    margin-top: 20px;
-    width: 310px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-}
-
-.option{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.optionIntro{
-    padding: 10px;
-    flex-basis: 50%;
-}
-.form{
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #12b11f61;
-    margin-bottom: 40px;
-    border-radius: 6px;
-    width: 100%;
-}
-.form img{
-    width: 70px;
-    padding-left: 140px;
-    padding-top: 10px;
-}
-form{
-    width: 350px;
-    height: 420px;
-}
-form h2{
-    color: #bcc92c;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top:20px
-}
-form input{
-    height: 30px;
-    width: 300px;
-    margin: 5px 0 5px 15px;
-    padding: 5px;
-    outline: hidden;
-    border-bottom: 2px solid #12b11f;
-    background-color: transparent;
-    border-radius: 10px;
-}
-::placeholder{
-    color: #000;
-    font-size: 20px;
-}
-form .btn{
-    margin-top: 20px;
-    width: 310px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-}
-
-@media (max-width:800px) {
-    header{
-        height: 140px;
-        
-    }
-    header .content{
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .logo{
-        border-bottom: 3px solid #bcc92c;
-        width: 100%;
-        padding: 10px 0 10px 0;
-        text-align: center;
-    }
-    .menu{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-}
-.aboutMain{
-    margin-top: 40px;
-}
-.aboutIntro{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.aboutMain .aboutTitle{
-    text-align: center;
-    color: #8f9b12;
-}
-.aboutText h2, p{
-    margin: 20px 0 5px 0;
-}
-.aboutText a{
-    color: blue;
-}
-.messageMain img{
-    position: relative;
-    left: 47%;
-    width: 70px;
-    top: 40px;
+    left: 50%;
 }
 .messageMain h1, h2{
     text-align: center;
